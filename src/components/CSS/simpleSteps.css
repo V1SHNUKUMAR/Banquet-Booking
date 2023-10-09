@@ -1,0 +1,90 @@
+.simpleSteps {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.simpleSteps .heading {
+  font-size: 2rem;
+}
+
+.simpleSteps .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin-bottom: 1rem;
+}
+
+.simpleSteps .box > * {
+  width: 40%;
+}
+
+.simpleSteps .box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.simpleSteps .box .imgBox {
+  position: relative;
+}
+
+.simpleSteps .box .imgBox::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  right: -40%;
+  z-index: -1;
+  width: 50%;
+  height: 1px;
+}
+
+.simpleSteps .box:nth-child(even) .imgBox::after {
+  left: -40%;
+}
+
+.simpleSteps .box:nth-child(1) .imgBox::after {
+  background-color: red;
+}
+.simpleSteps .box:nth-child(2) .imgBox::after {
+  background-color: yellow;
+}
+.simpleSteps .box:nth-child(3) .imgBox::after {
+  background-color: teal;
+}
+
+.simpleSteps .box .boxDetails {
+  text-align: start;
+  margin-top: -3rem;
+  max-width: 400px;
+}
+
+.simpleSteps .box .boxDetails img {
+  height: 35px;
+  width: 35px;
+}
+
+.simpleSteps .box .boxDetails p {
+  color: grey;
+}
+
+/* media queries for responsiveness */
+
+@media screen and (max-width: 920px) {
+  /* .simpleSteps .box .imgBox::after {
+    display: none;
+  } */
+  .simpleSteps .box .imgBox img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .simpleSteps .box .imgBox img {
+    width: 120%;
+  }
+  .simpleSteps .box .boxDetails img {
+    margin-bottom: -1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+}

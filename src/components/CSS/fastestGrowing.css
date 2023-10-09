@@ -1,0 +1,51 @@
+.fastestGrowing {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fastestGrowing .map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.fastestGrowing .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fastestGrowing .content .details {
+  margin-left: 5rem;
+  text-align: start;
+}
+.fastestGrowing .content .details .heading {
+  font-size: 1.5rem;
+}
+
+.fastestGrowing .content .details .desc {
+  font-weight: 600;
+  color: grey;
+  font-size: 0.9rem;
+  margin-top: -1.5rem;
+}
+
+.fastestGrowing .content .details .records {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.fastestGrowing .content .details .text-red {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: -1rem;
+}

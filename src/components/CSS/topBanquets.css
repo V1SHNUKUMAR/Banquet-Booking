@@ -1,0 +1,28 @@
+.topBanquets {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding: 2rem;
+}
+
+.topBanquets .heading {
+  line-height: 1;
+}
+
+.topBanquets .heading p {
+  font-size: 0.9rem;
+}
+
+.topBanquets .citiesGrid {
+  margin: 2.5rem auto;
+  display: grid;
+  /* place-items: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.topBanquets button {
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+}

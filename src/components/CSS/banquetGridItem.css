@@ -1,0 +1,67 @@
+.banquetGridItem {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 1;
+
+  /* aspect-ratio: 1; */
+}
+.banquetGridItem img {
+  width: 100%;
+}
+
+.banquetGridItem .details {
+  display: flex;
+}
+
+.banquetGridItem .details .like-cmnts {
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+}
+.banquetGridItem .details .like-cmnts img {
+  height: 35px;
+  width: auto;
+}
+
+.banquetGridItem .details .like-cmnts p {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.banquetGridItem .details .info .postedBy {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+.banquetGridItem .details .info {
+  position: relative;
+  width: 100%;
+}
+
+.banquetGridItem .details .info .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banquetGridItem .details .info .content div {
+  text-align: start;
+  margin: 2rem 1.5rem;
+  margin-top: 0;
+}
+
+.banquetGridItem .details .info .content div .lightMeal {
+  margin-top: -1rem;
+  color: rgb(0, 226, 0);
+  font-size: 1rem;
+}
+
+.banquetGridItem .details .info .content div p {
+  font-size: 0.85rem;
+  color: grey;
+}

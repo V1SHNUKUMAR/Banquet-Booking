@@ -1,0 +1,154 @@
+.offers {
+  margin: 2rem auto;
+  max-width: 72%;
+}
+
+.offers > .headingSection {
+  display: flex;
+  justify-content: start;
+}
+
+.offers > .headingSection > .heading {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  text-align: start;
+}
+
+.offers > .headingSection > .heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10rem;
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+
+.offersBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+hr {
+  border-bottom: 0px solid;
+}
+
+.offersBox .box:nth-child(1) {
+  background-color: rgb(255, 25, 25);
+}
+.offersBox .box:nth-child(2) {
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+.offersBox .box:nth-child(3) {
+  background-color: rgb(0, 175, 160);
+}
+
+.offersBox .box {
+  flex: 1;
+  min-height: 300px;
+  max-width: 235px;
+  border-radius: 40px;
+  border-bottom-right-radius: 0;
+  padding: 2rem;
+  color: white;
+  text-align: start;
+  overflow: hidden;
+}
+
+.offersBox .box .name {
+  font-weight: 600;
+}
+
+.offersBox .box .date {
+  color: white;
+  opacity: 0.75;
+  margin-top: -0.5rem;
+  font-size: 0.85rem;
+}
+
+.offersBox .box .desc {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.offersBox .box button {
+  margin-top: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 0.7rem;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.offersBox .box button:hover {
+  background-color: white;
+  color: black;
+}
+
+.offersBox .box button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  left: -2.25rem;
+  height: 1px;
+  width: 3rem;
+  background-color: white;
+}
+
+.offersBox .box button span::after {
+  content: "";
+  position: absolute;
+  bottom: 27%;
+  left: 18%;
+  height: 1px;
+  width: 25%;
+  border-bottom: 1px solid white;
+  mix-blend-mode: difference;
+}
+
+.offersBox .box:nth-child(2) .date {
+  color: black;
+}
+
+.offersBox .box .userDet {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.offersBox .box .userDet img {
+  height: 40px;
+  width: 40px;
+}
+
+.offersBox .box hr {
+  margin: 1rem auto;
+}
+
+.offersBox .box .userCont .descHeading {
+  font-weight: 600;
+}
+
+.offersBox .box .userCont .descCont {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.offersBox .box .userCont a {
+  border-bottom: 1px solid;
+  color: black;
+}
